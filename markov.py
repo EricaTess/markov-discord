@@ -2,6 +2,7 @@
 
 import os
 import discord
+import emoji
 import sys
 from random import choice
 
@@ -82,7 +83,7 @@ async def on_message(message):
         return
 
     # TODO: replace this with your code
-    if message.content.startswith('hello'):
-        await message.channel.send(make_text(chains))
+    if message.content.startswith(emoji.emojize(":thumbs_up:")):
+        await message.channel.send("Nice thumbs up")
 
 client.run(os.environ['DISCORD_TOKEN'])
