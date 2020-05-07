@@ -83,7 +83,7 @@ async def on_message(message):
         return
 
     # TODO: replace this with your code
-    if message.content.startswith(emoji.emojize(":thumbs_up:")):
-        await message.channel.send("Nice thumbs up")
+    if message.content.startswith('Mr. Manager'):
+        await message.channel.send("We just say manager...")
 
 client.run(os.environ['DISCORD_TOKEN'])
